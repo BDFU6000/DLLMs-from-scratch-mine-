@@ -1,0 +1,84 @@
+<svg viewBox="0 0 920 420" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="920" height="420" fill="#f8fafc"/>
+  <text x="460" y="30" text-anchor="middle" font-size="21" font-weight="800" fill="#0f172a">Tools to fight overfitting</text>
+
+  <!-- Cross validation -->
+  <rect x="20" y="50" width="500" height="350" rx="12" fill="#fff" stroke="#e2e8f0"/>
+  <text x="40" y="78" font-size="15" font-weight="700" fill="#0369a1">5-Fold Cross-Validation</text>
+  <text x="40" y="98" font-size="11" fill="#64748b">Rotate which slice is the test set. Average all 5 scores</text>
+  <text x="40" y="113" font-size="11" fill="#64748b">→ trustworthy estimate, not a lucky split.</text>
+  <g font-size="10" fill="#fff" text-anchor="middle">
+    <!-- row 1 -->
+    <text x="34" y="148" fill="#475569" text-anchor="start">Run 1</text>
+    <rect x="90" y="135" width="80" height="22" fill="#fb923c"/><text x="130" y="150">TEST</text>
+    <rect x="172" y="135" width="80" height="22" fill="#60a5fa"/><text x="212" y="150">train</text>
+    <rect x="254" y="135" width="80" height="22" fill="#60a5fa"/><text x="294" y="150">train</text>
+    <rect x="336" y="135" width="80" height="22" fill="#60a5fa"/><text x="376" y="150">train</text>
+    <rect x="418" y="135" width="80" height="22" fill="#60a5fa"/><text x="458" y="150">train</text>
+    <!-- row 2 -->
+    <text x="34" y="180" fill="#475569" text-anchor="start">Run 2</text>
+    <rect x="90" y="167" width="80" height="22" fill="#60a5fa"/><text x="130" y="182">train</text>
+    <rect x="172" y="167" width="80" height="22" fill="#fb923c"/><text x="212" y="182">TEST</text>
+    <rect x="254" y="167" width="80" height="22" fill="#60a5fa"/><text x="294" y="182">train</text>
+    <rect x="336" y="167" width="80" height="22" fill="#60a5fa"/><text x="376" y="182">train</text>
+    <rect x="418" y="167" width="80" height="22" fill="#60a5fa"/><text x="458" y="182">train</text>
+    <!-- row 3 -->
+    <text x="34" y="212" fill="#475569" text-anchor="start">Run 3</text>
+    <rect x="90" y="199" width="80" height="22" fill="#60a5fa"/><text x="130" y="214">train</text>
+    <rect x="172" y="199" width="80" height="22" fill="#60a5fa"/><text x="212" y="214">train</text>
+    <rect x="254" y="199" width="80" height="22" fill="#fb923c"/><text x="294" y="214">TEST</text>
+    <rect x="336" y="199" width="80" height="22" fill="#60a5fa"/><text x="376" y="214">train</text>
+    <rect x="418" y="199" width="80" height="22" fill="#60a5fa"/><text x="458" y="214">train</text>
+    <!-- row 4 -->
+    <text x="34" y="244" fill="#475569" text-anchor="start">Run 4</text>
+    <rect x="90" y="231" width="80" height="22" fill="#60a5fa"/><text x="130" y="246">train</text>
+    <rect x="172" y="231" width="80" height="22" fill="#60a5fa"/><text x="212" y="246">train</text>
+    <rect x="254" y="231" width="80" height="22" fill="#60a5fa"/><text x="294" y="246">train</text>
+    <rect x="336" y="231" width="80" height="22" fill="#fb923c"/><text x="376" y="246">TEST</text>
+    <rect x="418" y="231" width="80" height="22" fill="#60a5fa"/><text x="458" y="246">train</text>
+    <!-- row 5 -->
+    <text x="34" y="276" fill="#475569" text-anchor="start">Run 5</text>
+    <rect x="90" y="263" width="80" height="22" fill="#60a5fa"/><text x="130" y="278">train</text>
+    <rect x="172" y="263" width="80" height="22" fill="#60a5fa"/><text x="212" y="278">train</text>
+    <rect x="254" y="263" width="80" height="22" fill="#60a5fa"/><text x="294" y="278">train</text>
+    <rect x="336" y="263" width="80" height="22" fill="#60a5fa"/><text x="376" y="278">train</text>
+    <rect x="418" y="263" width="80" height="22" fill="#fb923c"/><text x="458" y="278">TEST</text>
+  </g>
+  <rect x="90" y="300" width="408" height="26" rx="6" fill="#dbeafe"/>
+  <text x="294" y="317" text-anchor="middle" font-size="11" font-weight="700" fill="#1d4ed8">final score = average of Run 1…5</text>
+  <text x="40" y="360" font-size="11" fill="#64748b">Also: Feature Engineering — crafting better inputs</text>
+  <text x="40" y="378" font-size="11" fill="#64748b">(e.g. turn a date into "is_weekend") so the model</text>
+  <text x="40" y="396" font-size="11" fill="#64748b">has more useful signal to learn from.</text>
+
+  <!-- Regularization -->
+  <rect x="540" y="50" width="360" height="350" rx="12" fill="#fff" stroke="#e2e8f0"/>
+  <text x="560" y="78" font-size="15" font-weight="700" fill="#9333ea">Regularization (L1 vs L2)</text>
+  <text x="560" y="98" font-size="11" fill="#64748b">Penalize big weights so the model stays simple.</text>
+
+  <text x="560" y="130" font-size="12" font-weight="700" fill="#0f172a">L1 (Lasso): pushes some weights to ZERO</text>
+  <text x="560" y="146" font-size="10" fill="#64748b">→ deletes useless features (feature selection)</text>
+  <g>
+    <rect x="565" y="158" width="30" height="40" fill="#c084fc"/>
+    <rect x="605" y="188" width="30" height="10" fill="#e9d5ff"/>
+    <rect x="645" y="168" width="30" height="30" fill="#c084fc"/>
+    <rect x="685" y="196" width="30" height="2" fill="#e9d5ff"/>
+    <rect x="725" y="178" width="30" height="20" fill="#c084fc"/>
+    <rect x="765" y="196" width="30" height="2" fill="#e9d5ff"/>
+    <line x1="560" y1="198" x2="860" y2="198" stroke="#cbd5e1"/>
+  </g>
+  <text x="710" y="216" text-anchor="middle" font-size="9" fill="#94a3b8">some bars vanish to 0</text>
+
+  <text x="560" y="252" font-size="12" font-weight="700" fill="#0f172a">L2 (Ridge): shrinks ALL weights small</text>
+  <text x="560" y="268" font-size="10" fill="#64748b">→ keeps every feature, but tames them (a.k.a. "weight decay")</text>
+  <g>
+    <rect x="565" y="300" width="30" height="22" fill="#7c3aed"/>
+    <rect x="605" y="305" width="30" height="17" fill="#7c3aed"/>
+    <rect x="645" y="298" width="30" height="24" fill="#7c3aed"/>
+    <rect x="685" y="308" width="30" height="14" fill="#7c3aed"/>
+    <rect x="725" y="302" width="30" height="20" fill="#7c3aed"/>
+    <rect x="765" y="306" width="30" height="16" fill="#7c3aed"/>
+    <line x1="560" y1="322" x2="860" y2="322" stroke="#cbd5e1"/>
+  </g>
+  <text x="710" y="340" text-anchor="middle" font-size="9" fill="#94a3b8">all bars small &amp; balanced</text>
+  <text x="560" y="378" font-size="10.5" fill="#0d9488">L2 / weight decay is used in training LLMs (in the AdamW optimizer).</text>
+</svg>

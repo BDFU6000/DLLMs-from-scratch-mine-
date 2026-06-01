@@ -1,0 +1,31 @@
+<svg viewBox="0 0 920 300" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="920" height="300" fill="#f8fafc"/>
+  <text x="460" y="30" text-anchor="middle" font-size="21" font-weight="800" fill="#0f172a">The #1 Lesson: Under-fit vs Just-right vs Over-fit</text>
+
+  <!-- Underfit -->
+  <rect x="20" y="50" width="288" height="230" rx="12" fill="#fff" stroke="#e2e8f0"/>
+  <text x="164" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">UNDERFITTING</text>
+  <text x="164" y="94" text-anchor="middle" font-size="10.5" fill="#64748b">model too simple — misses the pattern</text>
+  <line x1="45" y1="255" x2="290" y2="255" stroke="#cbd5e1"/><line x1="45" y1="255" x2="45" y2="110" stroke="#cbd5e1"/>
+  <line x1="55" y1="245" x2="285" y2="135" stroke="#dc2626" stroke-width="3"/>
+  <circle cx="70" cy="240" r="4" fill="#0f172a"/><circle cx="100" cy="200" r="4" fill="#0f172a"/><circle cx="140" cy="225" r="4" fill="#0f172a"/><circle cx="180" cy="160" r="4" fill="#0f172a"/><circle cx="220" cy="195" r="4" fill="#0f172a"/><circle cx="260" cy="140" r="4" fill="#0f172a"/>
+  <text x="164" y="275" text-anchor="middle" font-size="9.5" fill="#dc2626">bad on training AND new data</text>
+
+  <!-- Good fit -->
+  <rect x="316" y="50" width="288" height="230" rx="12" fill="#fff" stroke="#bbf7d0"/>
+  <text x="460" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#16a34a">GOOD FIT</text>
+  <text x="460" y="94" text-anchor="middle" font-size="10.5" fill="#64748b">captures the trend, ignores the noise</text>
+  <line x1="341" y1="255" x2="586" y2="255" stroke="#cbd5e1"/><line x1="341" y1="255" x2="341" y2="110" stroke="#cbd5e1"/>
+  <path d="M351 240 C 420 150, 500 210, 580 135" stroke="#16a34a" stroke-width="3" fill="none"/>
+  <circle cx="366" cy="240" r="4" fill="#0f172a"/><circle cx="396" cy="195" r="4" fill="#0f172a"/><circle cx="436" cy="170" r="4" fill="#0f172a"/><circle cx="476" cy="200" r="4" fill="#0f172a"/><circle cx="516" cy="180" r="4" fill="#0f172a"/><circle cx="556" cy="145" r="4" fill="#0f172a"/>
+  <text x="460" y="275" text-anchor="middle" font-size="9.5" fill="#16a34a">good on training AND new data ✓</text>
+
+  <!-- Overfit -->
+  <rect x="612" y="50" width="288" height="230" rx="12" fill="#fff" stroke="#e2e8f0"/>
+  <text x="756" y="76" text-anchor="middle" font-size="14" font-weight="700" fill="#ea580c">OVERFITTING</text>
+  <text x="756" y="94" text-anchor="middle" font-size="10.5" fill="#64748b">too complex — memorizes every point</text>
+  <line x1="637" y1="255" x2="882" y2="255" stroke="#cbd5e1"/><line x1="637" y1="255" x2="637" y2="110" stroke="#cbd5e1"/>
+  <path d="M662 240 L 692 193 L 700 200 L 732 167 L 740 175 L 772 200 L 780 178 L 812 182 L 820 175 L 852 143" stroke="#ea580c" stroke-width="2.5" fill="none"/>
+  <circle cx="662" cy="240" r="4" fill="#0f172a"/><circle cx="692" cy="193" r="4" fill="#0f172a"/><circle cx="732" cy="167" r="4" fill="#0f172a"/><circle cx="772" cy="200" r="4" fill="#0f172a"/><circle cx="812" cy="182" r="4" fill="#0f172a"/><circle cx="852" cy="143" r="4" fill="#0f172a"/>
+  <text x="756" y="275" text-anchor="middle" font-size="9.5" fill="#ea580c">perfect on training, FAILS on new data</text>
+</svg>

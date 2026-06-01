@@ -1,0 +1,27 @@
+<svg viewBox="0 0 840 400" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="840" height="400" fill="#f8fafc"/>
+  <text x="420" y="32" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">RLHF: aligning the model with human preferences</text>
+  <defs><marker id="rl" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"/></marker></defs>
+
+  <text x="220" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">Step 1 · Train a Reward Model</text>
+  <rect x="60" y="80" width="120" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed"/><text x="120" y="105" text-anchor="middle" font-size="11" fill="#5b21b6">LLM answers A,B,C</text>
+  <line x1="180" y1="100" x2="228" y2="100" stroke="#475569" stroke-width="1.5" marker-end="url(#rl)"/>
+  <rect x="230" y="80" width="120" height="40" rx="8" fill="#fef9c3" stroke="#ca8a04"/><text x="290" y="100" text-anchor="middle" font-size="11" fill="#92400e">Humans rank them</text><text x="290" y="114" text-anchor="middle" font-size="9" fill="#92400e">best → worst</text>
+  <line x1="290" y1="120" x2="290" y2="150" stroke="#475569" stroke-width="1.5" marker-end="url(#rl)"/>
+  <rect x="200" y="152" width="180" height="44" rx="10" fill="#dcfce7" stroke="#16a34a"/><text x="290" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Reward Model learns</text><text x="290" y="188" text-anchor="middle" font-size="9" fill="#166534">to score answers like a human</text>
+
+  <line x1="410" y1="180" x2="470" y2="180" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <text x="620" y="66" text-anchor="middle" font-size="14" font-weight="700" fill="#16a34a">Step 2 · Reinforcement Learning (PPO)</text>
+  <rect x="500" y="90" width="110" height="44" rx="10" fill="#ede9fe" stroke="#7c3aed"/><text x="555" y="117" text-anchor="middle" font-size="11" fill="#5b21b6">LLM answers</text>
+  <line x1="610" y1="112" x2="660" y2="112" stroke="#475569" stroke-width="1.5" marker-end="url(#rl)"/>
+  <rect x="662" y="90" width="120" height="44" rx="10" fill="#dcfce7" stroke="#16a34a"/><text x="722" y="112" text-anchor="middle" font-size="11" font-weight="700" fill="#166534">Reward Model</text><text x="722" y="126" text-anchor="middle" font-size="9" fill="#166534">gives a score</text>
+  <path d="M722 134 C 722 200 555 200 555 138" stroke="#16a34a" stroke-width="1.8" fill="none" marker-end="url(#rl)"/>
+  <text x="640" y="200" text-anchor="middle" font-size="10" fill="#16a34a">PPO updates the LLM: high score → reinforce, low → penalize</text>
+
+  <rect x="120" y="250" width="600" height="110" rx="12" fill="#fff" stroke="#e2e8f0"/>
+  <text x="420" y="278" text-anchor="middle" font-size="13" font-weight="700" fill="#0f172a">Result: a helpful, honest, harmless chat model</text>
+  <text x="420" y="304" text-anchor="middle" font-size="11" fill="#475569">It now refuses dangerous requests, adopts a polite persona, and prioritizes helpfulness.</text>
+  <text x="420" y="332" text-anchor="middle" font-size="11" fill="#7c3aed">Newer alternative: DPO (Direct Preference Optimization) skips the separate reward model —</text>
+  <text x="420" y="350" text-anchor="middle" font-size="11" fill="#7c3aed">it bakes the preference data straight into the loss. Now common in open-source AI.</text>
+</svg>

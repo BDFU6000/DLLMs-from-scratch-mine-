@@ -1,0 +1,23 @@
+<svg viewBox="0 0 840 300" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="840" height="300" fill="#f8fafc"/>
+  <text x="420" y="34" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">Tokenization: text → tokens → numbers</text>
+  <text x="420" y="58" text-anchor="middle" font-size="13" fill="#64748b">Sentence: "Tokenization is unbelievable!"</text>
+  <g font-size="13" text-anchor="middle">
+    <rect x="40"  y="90" width="95" height="40" rx="8" fill="#dbeafe" stroke="#2563eb"/><text x="87"  y="115" fill="#1e3a8a">Token</text>
+    <rect x="140" y="90" width="90" height="40" rx="8" fill="#dcfce7" stroke="#16a34a"/><text x="185" y="115" fill="#166534">ization</text>
+    <rect x="235" y="90" width="55" height="40" rx="8" fill="#fef9c3" stroke="#ca8a04"/><text x="262" y="115" fill="#92400e">is</text>
+    <rect x="295" y="90" width="55" height="40" rx="8" fill="#fce7f3" stroke="#db2777"/><text x="322" y="115" fill="#9d174d">un</text>
+    <rect x="355" y="90" width="55" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed"/><text x="382" y="115" fill="#5b21b6">bel</text>
+    <rect x="415" y="90" width="55" height="40" rx="8" fill="#ffedd5" stroke="#ea580c"/><text x="442" y="115" fill="#9a3412">iev</text>
+    <rect x="475" y="90" width="65" height="40" rx="8" fill="#cffafe" stroke="#0891b2"/><text x="507" y="115" fill="#155e75">able</text>
+    <rect x="545" y="90" width="40" height="40" rx="8" fill="#e2e8f0" stroke="#64748b"/><text x="565" y="115" fill="#334155">!</text>
+  </g>
+  <g font-size="11" text-anchor="middle" fill="#94a3b8">
+    <text x="87" y="148">15496</text><text x="185" y="148">2734</text><text x="262" y="148">318</text><text x="322" y="148">555</text><text x="382" y="148">6779</text><text x="442" y="148">11203</text><text x="507" y="148">540</text><text x="565" y="148">0</text>
+  </g>
+  <text x="420" y="170" text-anchor="middle" font-size="10" fill="#94a3b8">↑ each token becomes an ID the model can process</text>
+  <rect x="120" y="195" width="600" height="80" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="420" y="220" text-anchor="middle" font-size="12" font-weight="700" fill="#0f172a">Why subwords (not whole words)?</text>
+  <text x="420" y="242" text-anchor="middle" font-size="11" fill="#475569">Whole-word vocab would need millions of entries (every typo + conjugation).</text>
+  <text x="420" y="260" text-anchor="middle" font-size="11" fill="#475569">Subwords let the model handle unseen words by breaking them into known pieces. ~1 token ≈ 0.75 words.</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg viewBox="0 0 900 470" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="900" height="470" fill="#f8fafc"/>
+  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">Activation functions — the shapes that add non-linearity</text>
+
+  <!-- ReLU -->
+  <rect x="20" y="55" width="200" height="190" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="120" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#2563eb">ReLU</text>
+  <line x1="40" y1="210" x2="205" y2="210" stroke="#cbd5e1"/><line x1="115" y1="90" x2="115" y2="220" stroke="#cbd5e1"/>
+  <path d="M45 210 L115 210 L200 100" stroke="#2563eb" stroke-width="3" fill="none"/>
+  <text x="120" y="235" text-anchor="middle" font-size="9" fill="#64748b">max(0, z) · default in deep nets</text>
+
+  <!-- Sigmoid -->
+  <rect x="240" y="55" width="200" height="190" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="340" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#16a34a">Sigmoid</text>
+  <line x1="260" y1="210" x2="425" y2="210" stroke="#cbd5e1"/><line x1="335" y1="90" x2="335" y2="220" stroke="#cbd5e1"/>
+  <line x1="260" y1="150" x2="425" y2="150" stroke="#dc2626" stroke-dasharray="3 3"/><text x="430" y="153" font-size="8" fill="#dc2626">0.5</text>
+  <path d="M265 205 C 320 205 335 100 415 98" stroke="#16a34a" stroke-width="3" fill="none"/>
+  <text x="340" y="235" text-anchor="middle" font-size="9" fill="#64748b">0 to 1 · binary output</text>
+
+  <!-- Tanh -->
+  <rect x="460" y="55" width="200" height="190" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="560" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#db2777">Tanh</text>
+  <line x1="480" y1="160" x2="645" y2="160" stroke="#cbd5e1"/><line x1="560" y1="90" x2="560" y2="225" stroke="#cbd5e1"/>
+  <path d="M485 212 C 545 212 560 108 635 105" stroke="#db2777" stroke-width="3" fill="none"/>
+  <text x="560" y="240" text-anchor="middle" font-size="9" fill="#64748b">-1 to 1 · zero-centered</text>
+
+  <!-- GELU -->
+  <rect x="680" y="55" width="200" height="190" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="780" y="78" text-anchor="middle" font-size="14" font-weight="700" fill="#7c3aed">GELU</text>
+  <line x1="700" y1="200" x2="865" y2="200" stroke="#cbd5e1"/><line x1="775" y1="90" x2="775" y2="215" stroke="#cbd5e1"/>
+  <path d="M705 200 C 745 203 765 207 778 198 C 800 182 835 110 860 98" stroke="#7c3aed" stroke-width="3" fill="none"/>
+  <text x="780" y="225" text-anchor="middle" font-size="9" fill="#64748b">smooth ReLU · used in GPT/BERT</text>
+
+  <!-- Softmax -->
+  <rect x="20" y="265" width="860" height="185" rx="10" fill="#fff" stroke="#e2e8f0"/>
+  <text x="40" y="290" font-size="14" font-weight="700" fill="#ea580c">Softmax — turns raw scores (logits) into probabilities that sum to 1</text>
+  <text x="40" y="312" font-size="11" fill="#64748b">This is the final step when an LLM predicts the next word: each candidate word gets a probability.</text>
+  <!-- logits -->
+  <text x="120" y="345" text-anchor="middle" font-size="11" fill="#475569">raw scores</text>
+  <rect x="70" y="355" width="100" height="24" fill="#fde68a"/><text x="120" y="372" text-anchor="middle" font-size="11" fill="#92400e">cat: 2.0</text>
+  <rect x="70" y="383" width="100" height="24" fill="#fde68a"/><text x="120" y="400" text-anchor="middle" font-size="11" fill="#92400e">dog: 1.0</text>
+  <rect x="70" y="411" width="100" height="24" fill="#fde68a"/><text x="120" y="428" text-anchor="middle" font-size="11" fill="#92400e">car: 0.1</text>
+  <text x="220" y="395" font-size="26" fill="#94a3b8">→</text>
+  <text x="300" y="320" font-size="11" fill="#ea580c">Softmax</text>
+  <!-- prob bars -->
+  <rect x="300" y="358" width="360" height="20" rx="4" fill="#fed7aa"/><rect x="300" y="358" width="234" height="20" rx="4" fill="#ea580c"/><text x="675" y="373" font-size="11" fill="#9a3412">0.65 cat</text>
+  <rect x="300" y="386" width="360" height="20" rx="4" fill="#fed7aa"/><rect x="300" y="386" width="86" height="20" rx="4" fill="#ea580c"/><text x="675" y="401" font-size="11" fill="#9a3412">0.24 dog</text>
+  <rect x="300" y="414" width="360" height="20" rx="4" fill="#fed7aa"/><rect x="300" y="414" width="40" height="20" rx="4" fill="#ea580c"/><text x="675" y="429" font-size="11" fill="#9a3412">0.11 car</text>
+  <text x="765" y="400" font-size="12" font-weight="700" fill="#0f172a">sums to 1.0</text>
+</svg>

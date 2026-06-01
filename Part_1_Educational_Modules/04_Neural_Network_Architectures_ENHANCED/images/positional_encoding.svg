@@ -1,0 +1,15 @@
+<svg viewBox="0 0 820 300" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="820" height="300" fill="#f8fafc"/>
+  <text x="410" y="32" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">Positional Encoding: telling the model the word order</text>
+  <text x="410" y="56" text-anchor="middle" font-size="12" fill="#64748b">Processing all words at once means order is lost — so we add a position signal</text>
+  <rect x="40" y="80" width="350" height="70" rx="10" fill="#fff" stroke="#fecaca"/>
+  <text x="215" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#b91c1c">Without it, these look identical:</text>
+  <text x="215" y="128" text-anchor="middle" font-size="12" fill="#7f1d1d">"The dog bit the man" = "The man bit the dog"</text>
+  <rect x="430" y="80" width="350" height="70" rx="10" fill="#fff" stroke="#bbf7d0"/>
+  <text x="605" y="105" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">Add a position pattern to each word:</text>
+  <text x="605" y="128" text-anchor="middle" font-size="12" fill="#14532d">word embedding  +  position(1,2,3,…)</text>
+  <text x="120" y="190" font-size="11" fill="#475569">A unique wave pattern (sine/cosine) marks each slot:</text>
+  <path d="M60 240 C 110 200, 160 280, 210 240 C 260 200, 310 280, 360 240 C 410 200, 460 280, 510 240 C 560 200, 610 280, 660 240 C 710 200, 760 280, 760 240" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+  <path d="M60 250 C 95 215, 130 285, 165 250 C 200 215, 235 285, 270 250 C 305 215, 340 285, 375 250 C 410 215, 445 285, 480 250 C 515 215, 550 285, 585 250 C 620 215, 655 285, 690 250 C 725 215, 760 285, 760 250" stroke="#db2777" stroke-width="2" fill="none" opacity="0.7"/>
+  <text x="410" y="290" text-anchor="middle" font-size="10" fill="#64748b">each position gets a distinct combination → the model recovers order without losing parallelism</text>
+</svg>

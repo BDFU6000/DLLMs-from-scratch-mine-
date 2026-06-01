@@ -1,0 +1,33 @@
+<svg viewBox="0 0 780 380" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="780" height="380" fill="#f8fafc"/>
+  <text x="390" y="34" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">Inside one artificial neuron</text>
+  <defs><marker id="n" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/></marker></defs>
+  <!-- inputs -->
+  <circle cx="70" cy="110" r="24" fill="#dbeafe" stroke="#2563eb"/><text x="70" y="116" text-anchor="middle" font-size="15" fill="#1e3a8a">x1</text>
+  <circle cx="70" cy="190" r="24" fill="#dbeafe" stroke="#2563eb"/><text x="70" y="196" text-anchor="middle" font-size="15" fill="#1e3a8a">x2</text>
+  <circle cx="70" cy="270" r="24" fill="#dbeafe" stroke="#2563eb"/><text x="70" y="276" text-anchor="middle" font-size="15" fill="#1e3a8a">x3</text>
+  <text x="70" y="320" text-anchor="middle" font-size="11" fill="#64748b">inputs</text>
+  <!-- weights arrows to sum -->
+  <line x1="94" y1="110" x2="300" y2="180" stroke="#64748b" stroke-width="1.5" marker-end="url(#n)"/>
+  <line x1="94" y1="190" x2="300" y2="190" stroke="#64748b" stroke-width="1.5" marker-end="url(#n)"/>
+  <line x1="94" y1="270" x2="300" y2="200" stroke="#64748b" stroke-width="1.5" marker-end="url(#n)"/>
+  <text x="185" y="130" font-size="12" fill="#dc2626" font-weight="700">×w1</text>
+  <text x="185" y="183" font-size="12" fill="#dc2626" font-weight="700">×w2</text>
+  <text x="185" y="240" font-size="12" fill="#dc2626" font-weight="700">×w3</text>
+  <!-- bias -->
+  <circle cx="180" cy="300" r="20" fill="#fef9c3" stroke="#ca8a04"/><text x="180" y="305" text-anchor="middle" font-size="13" fill="#854d0e">b</text>
+  <line x1="200" y1="295" x2="305" y2="205" stroke="#ca8a04" stroke-width="1.5" marker-end="url(#n)"/>
+  <text x="235" y="280" font-size="11" fill="#ca8a04">+ bias</text>
+  <!-- sum node -->
+  <circle cx="340" cy="190" r="40" fill="#1e293b"/><text x="340" y="186" text-anchor="middle" font-size="22" fill="#fff">Σ</text><text x="340" y="206" text-anchor="middle" font-size="10" fill="#94a3b8">z = Σwx+b</text>
+  <text x="340" y="255" text-anchor="middle" font-size="11" fill="#64748b">Step 1: weighted sum</text>
+  <!-- activation -->
+  <line x1="380" y1="190" x2="455" y2="190" stroke="#64748b" stroke-width="1.5" marker-end="url(#n)"/>
+  <rect x="460" y="150" width="110" height="80" rx="12" fill="#16a34a"/><text x="515" y="186" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">f(z)</text><text x="515" y="206" text-anchor="middle" font-size="10" fill="#dcfce7">activation</text>
+  <text x="515" y="255" text-anchor="middle" font-size="11" fill="#64748b">Step 2: add non-linearity</text>
+  <!-- output -->
+  <line x1="570" y1="190" x2="650" y2="190" stroke="#64748b" stroke-width="1.5" marker-end="url(#n)"/>
+  <circle cx="700" cy="190" r="28" fill="#ede9fe" stroke="#7c3aed"/><text x="700" y="196" text-anchor="middle" font-size="15" fill="#5b21b6">a</text>
+  <text x="700" y="240" text-anchor="middle" font-size="11" fill="#64748b">output</text>
+  <text x="390" y="358" text-anchor="middle" font-size="12" fill="#0f172a">A "7-billion-parameter" model = 7 billion of these weights (w) and biases (b).</text>
+</svg>

@@ -1,0 +1,39 @@
+<svg viewBox="0 0 920 380" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="920" height="380" fill="#f8fafc"/>
+  <text x="460" y="34" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">How a ChatGPT-level model is built: 3 phases</text>
+  <defs><marker id="p" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"/></marker></defs>
+
+  <rect x="30" y="70" width="270" height="240" rx="14" fill="#fee2e2" stroke="#dc2626"/>
+  <text x="165" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#991b1b">1 · Pretraining</text>
+  <text x="165" y="128" text-anchor="middle" font-size="11" fill="#7f1d1d">Data: trillions of tokens</text>
+  <text x="165" y="146" text-anchor="middle" font-size="11" fill="#7f1d1d">(the whole internet, unlabeled)</text>
+  <text x="165" y="170" text-anchor="middle" font-size="11" fill="#7f1d1d">Task: next-token prediction</text>
+  <text x="165" y="188" text-anchor="middle" font-size="11" fill="#7f1d1d">Cost: months, 1000s of GPUs 💰💰💰</text>
+  <text x="165" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#991b1b">→ BASE model</text>
+  <text x="165" y="248" text-anchor="middle" font-size="10" fill="#7f1d1d">knows everything, but only</text>
+  <text x="165" y="263" text-anchor="middle" font-size="10" fill="#7f1d1d">"autocompletes" — not a chatbot</text>
+
+  <rect x="325" y="70" width="270" height="240" rx="14" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="460" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#854d0e">2 · Supervised Fine-Tuning</text>
+  <text x="460" y="128" text-anchor="middle" font-size="11" fill="#713f12">Data: 10k–100k curated</text>
+  <text x="460" y="146" text-anchor="middle" font-size="11" fill="#713f12">[instruction → ideal answer] pairs</text>
+  <text x="460" y="170" text-anchor="middle" font-size="11" fill="#713f12">Task: supervised learning</text>
+  <text x="460" y="188" text-anchor="middle" font-size="11" fill="#713f12">Cost: modest 💰</text>
+  <text x="460" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#854d0e">→ INSTRUCT model</text>
+  <text x="460" y="248" text-anchor="middle" font-size="10" fill="#713f12">now answers questions properly</text>
+  <text x="460" y="263" text-anchor="middle" font-size="10" fill="#713f12">— a functional chatbot</text>
+
+  <rect x="620" y="70" width="270" height="240" rx="14" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="755" y="100" text-anchor="middle" font-size="15" font-weight="700" fill="#166534">3 · Alignment (RLHF)</text>
+  <text x="755" y="128" text-anchor="middle" font-size="11" fill="#14532d">Data: human preference rankings</text>
+  <text x="755" y="146" text-anchor="middle" font-size="11" fill="#14532d">(which answer is better/safer)</text>
+  <text x="755" y="170" text-anchor="middle" font-size="11" fill="#14532d">Task: reinforcement learning (PPO)</text>
+  <text x="755" y="188" text-anchor="middle" font-size="11" fill="#14532d">Cost: modest 💰</text>
+  <text x="755" y="222" text-anchor="middle" font-size="12" font-weight="700" fill="#166534">→ ALIGNED chat model</text>
+  <text x="755" y="248" text-anchor="middle" font-size="10" fill="#14532d">helpful, honest, refuses harm</text>
+  <text x="755" y="263" text-anchor="middle" font-size="10" fill="#14532d">(ChatGPT / Claude)</text>
+
+  <line x1="300" y1="190" x2="323" y2="190" stroke="#475569" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="595" y1="190" x2="618" y2="190" stroke="#475569" stroke-width="2" marker-end="url(#p)"/>
+  <text x="460" y="350" text-anchor="middle" font-size="11" fill="#64748b">Each phase uses different data, compute, and learning type — and changes the model's behavior dramatically.</text>
+</svg>

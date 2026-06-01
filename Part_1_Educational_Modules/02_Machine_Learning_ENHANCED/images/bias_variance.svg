@@ -1,0 +1,51 @@
+<svg viewBox="0 0 920 380" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="920" height="380" fill="#f8fafc"/>
+  <text x="460" y="30" text-anchor="middle" font-size="21" font-weight="800" fill="#0f172a">Bias vs Variance — the dartboard &amp; the tradeoff curve</text>
+
+  <!-- Dartboards -->
+  <text x="240" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#475569">Think of hitting a target</text>
+  <!-- low bias low var -->
+  <g transform="translate(90,90)">
+    <circle r="46" fill="#fff" stroke="#cbd5e1"/><circle r="30" fill="none" stroke="#cbd5e1"/><circle r="14" fill="none" stroke="#cbd5e1"/>
+    <circle cx="2" cy="-3" r="3" fill="#16a34a"/><circle cx="-4" cy="4" r="3" fill="#16a34a"/><circle cx="5" cy="5" r="3" fill="#16a34a"/><circle cx="-2" cy="-6" r="3" fill="#16a34a"/>
+    <text x="0" y="68" text-anchor="middle" font-size="10" font-weight="700" fill="#16a34a">IDEAL</text>
+    <text x="0" y="82" text-anchor="middle" font-size="9" fill="#64748b">low bias, low var</text>
+  </g>
+  <!-- low bias high var -->
+  <g transform="translate(210,90)">
+    <circle r="46" fill="#fff" stroke="#cbd5e1"/><circle r="30" fill="none" stroke="#cbd5e1"/><circle r="14" fill="none" stroke="#cbd5e1"/>
+    <circle cx="22" cy="-8" r="3" fill="#ea580c"/><circle cx="-18" cy="14" r="3" fill="#ea580c"/><circle cx="10" cy="20" r="3" fill="#ea580c"/><circle cx="-12" cy="-18" r="3" fill="#ea580c"/>
+    <text x="0" y="68" text-anchor="middle" font-size="10" font-weight="700" fill="#ea580c">OVERFIT</text>
+    <text x="0" y="82" text-anchor="middle" font-size="9" fill="#64748b">low bias, HIGH var</text>
+  </g>
+  <!-- high bias low var -->
+  <g transform="translate(330,90)">
+    <circle r="46" fill="#fff" stroke="#cbd5e1"/><circle r="30" fill="none" stroke="#cbd5e1"/><circle r="14" fill="none" stroke="#cbd5e1"/>
+    <circle cx="26" cy="22" r="3" fill="#dc2626"/><circle cx="30" cy="26" r="3" fill="#dc2626"/><circle cx="22" cy="28" r="3" fill="#dc2626"/><circle cx="28" cy="18" r="3" fill="#dc2626"/>
+    <text x="0" y="68" text-anchor="middle" font-size="10" font-weight="700" fill="#dc2626">UNDERFIT</text>
+    <text x="0" y="82" text-anchor="middle" font-size="9" fill="#64748b">HIGH bias, low var</text>
+  </g>
+
+  <text x="240" y="210" text-anchor="middle" font-size="11" fill="#64748b">Bias = consistently off-target (too simple).</text>
+  <text x="240" y="228" text-anchor="middle" font-size="11" fill="#64748b">Variance = scattered, over-reacts to the data (too complex).</text>
+
+  <!-- Tradeoff curve -->
+  <g transform="translate(520,60)">
+    <text x="170" y="2" text-anchor="middle" font-size="13" font-weight="700" fill="#475569">Total error is a U-curve</text>
+    <line x1="40" y1="250" x2="360" y2="250" stroke="#0f172a"/><line x1="40" y1="250" x2="40" y2="40" stroke="#0f172a"/>
+    <text x="200" y="278" text-anchor="middle" font-size="11" fill="#475569">model complexity →</text>
+    <text x="22" y="150" text-anchor="middle" font-size="11" fill="#475569" transform="rotate(-90 22 150)">error →</text>
+    <!-- bias decreasing -->
+    <path d="M50 80 C 150 130, 250 230, 350 245" stroke="#dc2626" stroke-width="2.5" fill="none"/>
+    <text x="70" y="78" font-size="10" fill="#dc2626">bias²</text>
+    <!-- variance increasing -->
+    <path d="M50 245 C 150 230, 250 130, 350 70" stroke="#ea580c" stroke-width="2.5" fill="none"/>
+    <text x="320" y="70" font-size="10" fill="#ea580c">variance</text>
+    <!-- total U -->
+    <path d="M50 120 C 150 95, 250 95, 350 120" stroke="#2563eb" stroke-width="3" fill="none"/>
+    <text x="120" y="108" font-size="10" font-weight="700" fill="#2563eb">total error</text>
+    <line x1="200" y1="100" x2="200" y2="250" stroke="#16a34a" stroke-dasharray="4 4"/>
+    <circle cx="200" cy="100" r="5" fill="#16a34a"/>
+    <text x="200" y="92" text-anchor="middle" font-size="10" font-weight="700" fill="#16a34a">sweet spot</text>
+  </g>
+</svg>

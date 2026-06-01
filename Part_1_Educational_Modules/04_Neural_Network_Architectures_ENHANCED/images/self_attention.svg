@@ -1,0 +1,28 @@
+<svg viewBox="0 0 820 320" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="820" height="320" fill="#f8fafc"/>
+  <text x="410" y="32" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">Self-Attention: each word looks at every other word</text>
+  <text x="410" y="56" text-anchor="middle" font-size="12" fill="#64748b">The word "bank" figures out its meaning from context (thicker line = more attention)</text>
+  <g font-size="14" text-anchor="middle">
+    <text x="80" y="150" fill="#475569">I</text>
+    <text x="170" y="150" fill="#475569">went</text>
+    <text x="260" y="150" fill="#475569">to</text>
+    <text x="345" y="150" fill="#475569">the</text>
+    <rect x="395" y="130" width="70" height="34" rx="8" fill="#1e293b"/><text x="430" y="153" fill="#fff" font-weight="700">bank</text>
+    <text x="520" y="150" fill="#475569">to</text>
+    <text x="600" y="150" fill="#16a34a" font-weight="700">deposit</text>
+    <text x="710" y="150" fill="#16a34a" font-weight="700">money</text>
+  </g>
+  <g fill="none">
+    <path d="M425 130 C 380 90, 200 90, 175 138" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M428 130 C 420 100, 360 100, 350 138" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M440 130 C 500 95, 560 95, 600 134" stroke="#16a34a" stroke-width="4"/>
+    <path d="M448 130 C 560 85, 660 85, 710 134" stroke="#16a34a" stroke-width="5"/>
+  </g>
+  <text x="410" y="230" text-anchor="middle" font-size="12" fill="#0f172a">Same word, different sentence → different attention:</text>
+  <g font-size="13" text-anchor="middle">
+    <text x="250" y="270" fill="#475569">I sat on the river</text>
+    <rect x="350" y="252" width="64" height="30" rx="7" fill="#1e293b"/><text x="382" y="273" fill="#fff" font-weight="700">bank</text>
+    <path d="M360 252 C 320 225, 270 225, 250 256" stroke="#2563eb" stroke-width="5" fill="none"/>
+    <text x="200" y="244" fill="#2563eb" font-size="10">now attends to "river"</text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg viewBox="0 0 560 600" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="560" height="600" fill="#f8fafc"/>
+  <text x="280" y="34" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">The Transformer Block</text>
+  <text x="280" y="56" text-anchor="middle" font-size="12" fill="#64748b">Stack dozens of these → a modern LLM</text>
+  <defs><marker id="t" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#475569"/></marker></defs>
+  <rect x="150" y="80" width="260" height="50" rx="10" fill="#dbeafe" stroke="#2563eb"/><text x="280" y="103" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Input Embeddings</text><text x="280" y="120" text-anchor="middle" font-size="10" fill="#1e3a8a">+ Positional Encoding</text>
+  <line x1="280" y1="130" x2="280" y2="158" stroke="#475569" stroke-width="2" marker-end="url(#t)"/>
+  <rect x="150" y="160" width="260" height="50" rx="10" fill="#fce7f3" stroke="#db2777"/><text x="280" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#9d174d">Multi-Head Self-Attention</text>
+  <line x1="280" y1="210" x2="280" y2="238" stroke="#475569" stroke-width="2" marker-end="url(#t)"/>
+  <rect x="150" y="240" width="260" height="44" rx="10" fill="#fef9c3" stroke="#ca8a04"/><text x="280" y="267" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Add &amp; Norm</text>
+  <line x1="280" y1="284" x2="280" y2="312" stroke="#475569" stroke-width="2" marker-end="url(#t)"/>
+  <rect x="150" y="314" width="260" height="50" rx="10" fill="#dcfce7" stroke="#16a34a"/><text x="280" y="344" text-anchor="middle" font-size="13" font-weight="700" fill="#166534">Feedforward Network</text>
+  <line x1="280" y1="364" x2="280" y2="392" stroke="#475569" stroke-width="2" marker-end="url(#t)"/>
+  <rect x="150" y="394" width="260" height="44" rx="10" fill="#fef9c3" stroke="#ca8a04"/><text x="280" y="421" text-anchor="middle" font-size="12" font-weight="700" fill="#92400e">Add &amp; Norm</text>
+  <!-- residual arrows -->
+  <path d="M150 185 C 95 185, 95 262, 145 262" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#t)"/>
+  <path d="M150 339 C 95 339, 95 416, 145 416" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="4 3" marker-end="url(#t)"/>
+  <text x="70" y="225" font-size="9" fill="#94a3b8" transform="rotate(-90 70 225)">residual</text>
+  <text x="70" y="380" font-size="9" fill="#94a3b8" transform="rotate(-90 70 380)">residual</text>
+  <!-- stack indicator -->
+  <rect x="135" y="468" width="290" height="60" rx="12" fill="#1e293b"/>
+  <text x="280" y="494" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Stack × N (12, 48, 96, …)</text>
+  <text x="280" y="514" text-anchor="middle" font-size="10" fill="#94a3b8">more blocks = a bigger, smarter model</text>
+  <line x1="280" y1="438" x2="280" y2="466" stroke="#475569" stroke-width="2" marker-end="url(#t)"/>
+  <text x="280" y="560" text-anchor="middle" font-size="11" fill="#475569">GPT, Claude, Gemini, LLaMA — all built from this block.</text>
+</svg>

@@ -1,0 +1,97 @@
+<svg viewBox="0 0 840 340" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="840" height="340" fill="#f8fafc"/>
+  <text x="420" y="34" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">Context window: why attention cost grows as N²</text>
+  <text x="420" y="58" text-anchor="middle" font-size="12" fill="#64748b">Attention compares every token with every other token → an N×N grid</text>
+  <text x="190" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#16a34a">4 tokens → 16 comparisons</text>
+  <g>
+    <g fill="#dcfce7" stroke="#16a34a">
+      <rect x="110" y="100" width="36" height="36"/>
+      <rect x="150" y="100" width="36" height="36"/>
+      <rect x="190" y="100" width="36" height="36"/>
+      <rect x="230" y="100" width="36" height="36"/>
+      <rect x="110" y="140" width="36" height="36"/>
+      <rect x="150" y="140" width="36" height="36"/>
+      <rect x="190" y="140" width="36" height="36"/>
+      <rect x="230" y="140" width="36" height="36"/>
+      <rect x="110" y="180" width="36" height="36"/>
+      <rect x="150" y="180" width="36" height="36"/>
+      <rect x="190" y="180" width="36" height="36"/>
+      <rect x="230" y="180" width="36" height="36"/>
+      <rect x="110" y="220" width="36" height="36"/>
+      <rect x="150" y="220" width="36" height="36"/>
+      <rect x="190" y="220" width="36" height="36"/>
+      <rect x="230" y="220" width="36" height="36"/>
+    </g>
+  </g>
+  <text x="620" y="90" text-anchor="middle" font-size="13" font-weight="700" fill="#dc2626">8 tokens → 64 comparisons (4×!)</text>
+  <g>
+    <g fill="#fee2e2" stroke="#dc2626">
+      <rect x="500" y="100" width="19" height="19"/>
+      <rect x="522" y="100" width="19" height="19"/>
+      <rect x="544" y="100" width="19" height="19"/>
+      <rect x="566" y="100" width="19" height="19"/>
+      <rect x="588" y="100" width="19" height="19"/>
+      <rect x="610" y="100" width="19" height="19"/>
+      <rect x="632" y="100" width="19" height="19"/>
+      <rect x="654" y="100" width="19" height="19"/>
+      <rect x="500" y="122" width="19" height="19"/>
+      <rect x="522" y="122" width="19" height="19"/>
+      <rect x="544" y="122" width="19" height="19"/>
+      <rect x="566" y="122" width="19" height="19"/>
+      <rect x="588" y="122" width="19" height="19"/>
+      <rect x="610" y="122" width="19" height="19"/>
+      <rect x="632" y="122" width="19" height="19"/>
+      <rect x="654" y="122" width="19" height="19"/>
+      <rect x="500" y="144" width="19" height="19"/>
+      <rect x="522" y="144" width="19" height="19"/>
+      <rect x="544" y="144" width="19" height="19"/>
+      <rect x="566" y="144" width="19" height="19"/>
+      <rect x="588" y="144" width="19" height="19"/>
+      <rect x="610" y="144" width="19" height="19"/>
+      <rect x="632" y="144" width="19" height="19"/>
+      <rect x="654" y="144" width="19" height="19"/>
+      <rect x="500" y="166" width="19" height="19"/>
+      <rect x="522" y="166" width="19" height="19"/>
+      <rect x="544" y="166" width="19" height="19"/>
+      <rect x="566" y="166" width="19" height="19"/>
+      <rect x="588" y="166" width="19" height="19"/>
+      <rect x="610" y="166" width="19" height="19"/>
+      <rect x="632" y="166" width="19" height="19"/>
+      <rect x="654" y="166" width="19" height="19"/>
+      <rect x="500" y="188" width="19" height="19"/>
+      <rect x="522" y="188" width="19" height="19"/>
+      <rect x="544" y="188" width="19" height="19"/>
+      <rect x="566" y="188" width="19" height="19"/>
+      <rect x="588" y="188" width="19" height="19"/>
+      <rect x="610" y="188" width="19" height="19"/>
+      <rect x="632" y="188" width="19" height="19"/>
+      <rect x="654" y="188" width="19" height="19"/>
+      <rect x="500" y="210" width="19" height="19"/>
+      <rect x="522" y="210" width="19" height="19"/>
+      <rect x="544" y="210" width="19" height="19"/>
+      <rect x="566" y="210" width="19" height="19"/>
+      <rect x="588" y="210" width="19" height="19"/>
+      <rect x="610" y="210" width="19" height="19"/>
+      <rect x="632" y="210" width="19" height="19"/>
+      <rect x="654" y="210" width="19" height="19"/>
+      <rect x="500" y="232" width="19" height="19"/>
+      <rect x="522" y="232" width="19" height="19"/>
+      <rect x="544" y="232" width="19" height="19"/>
+      <rect x="566" y="232" width="19" height="19"/>
+      <rect x="588" y="232" width="19" height="19"/>
+      <rect x="610" y="232" width="19" height="19"/>
+      <rect x="632" y="232" width="19" height="19"/>
+      <rect x="654" y="232" width="19" height="19"/>
+      <rect x="500" y="254" width="19" height="19"/>
+      <rect x="522" y="254" width="19" height="19"/>
+      <rect x="544" y="254" width="19" height="19"/>
+      <rect x="566" y="254" width="19" height="19"/>
+      <rect x="588" y="254" width="19" height="19"/>
+      <rect x="610" y="254" width="19" height="19"/>
+      <rect x="632" y="254" width="19" height="19"/>
+      <rect x="654" y="254" width="19" height="19"/>
+    </g>
+  </g>
+  <text x="420" y="310" text-anchor="middle" font-size="12" fill="#0f172a">Double the tokens → 4× the memory &amp; compute. That's why context length is limited.</text>
+  <text x="420" y="330" text-anchor="middle" font-size="11" fill="#64748b">GPT-2: 1,024 tokens   →   Gemini 1.5 Pro: up to 2,000,000 tokens</text>
+</svg>

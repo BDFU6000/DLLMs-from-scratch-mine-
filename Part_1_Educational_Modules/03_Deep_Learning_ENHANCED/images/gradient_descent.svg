@@ -1,0 +1,24 @@
+<svg viewBox="0 0 740 400" xmlns="http://www.w3.org/2000/svg" font-family="ui-sans-serif, system-ui, sans-serif">
+  <rect width="740" height="400" fill="#f8fafc"/>
+  <text x="370" y="32" text-anchor="middle" font-size="20" font-weight="800" fill="#0f172a">How training works: rolling downhill on the loss</text>
+  <line x1="80" y1="340" x2="690" y2="340" stroke="#0f172a"/><line x1="80" y1="340" x2="80" y2="70" stroke="#0f172a"/>
+  <text x="385" y="375" text-anchor="middle" font-size="12" fill="#475569">weight value →</text>
+  <text x="40" y="200" text-anchor="middle" font-size="12" fill="#475569" transform="rotate(-90 40 200)">loss (how wrong) →</text>
+  <!-- bowl -->
+  <path d="M110 100 C 250 120, 320 330, 385 330 C 450 330, 520 120, 660 100" stroke="#2563eb" stroke-width="3" fill="none"/>
+  <!-- steps -->
+  <circle cx="150" cy="150" r="9" fill="#dc2626"/><text x="150" y="135" text-anchor="middle" font-size="9" fill="#dc2626">start</text>
+  <circle cx="215" cy="225" r="8" fill="#ea580c"/>
+  <circle cx="285" cy="295" r="8" fill="#f59e0b"/>
+  <circle cx="345" cy="324" r="8" fill="#84cc16"/>
+  <circle cx="385" cy="330" r="11" fill="#16a34a"/><text x="385" y="316" text-anchor="middle" font-size="10" font-weight="700" fill="#16a34a">minimum loss</text>
+  <g stroke="#64748b" stroke-width="1.5" stroke-dasharray="3 3">
+    <line x1="159" y1="158" x2="206" y2="217"/><line x1="223" y1="232" x2="277" y2="288"/><line x1="293" y1="301" x2="337" y2="318"/>
+  </g>
+  <text x="540" y="200" font-size="11" fill="#64748b">Each step:</text>
+  <text x="540" y="220" font-size="11" fill="#64748b">1. measure the slope (gradient)</text>
+  <text x="540" y="238" font-size="11" fill="#64748b">2. step downhill (opposite the slope)</text>
+  <text x="540" y="256" font-size="11" fill="#64748b">3. repeat until the bottom</text>
+  <text x="540" y="282" font-size="11" fill="#7c3aed">Step size = the LEARNING RATE.</text>
+  <text x="540" y="300" font-size="11" fill="#7c3aed">Which knob picks the step = the OPTIMIZER.</text>
+</svg>
